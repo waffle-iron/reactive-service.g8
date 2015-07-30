@@ -3,7 +3,7 @@ name := "$name$"
 
 organization := "$organization$"
 
-scalacVersion := "$scalacV$"
+scalaVersion := "$scalacV$"
 
 scalacOptions ++= Seq(
   "-target:jvm-1.8",
