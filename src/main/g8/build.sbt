@@ -1,9 +1,9 @@
 
 name := "$name$"
 
-organization := "xxx"
+organization := "$organization$"
 
-scalacVersion := "2.11.7"
+scalacVersion := "$scalacV$"
 
 scalacOptions ++= Seq(
   "-target:jvm-1.8",
@@ -33,8 +33,8 @@ resolvers ++= Seq(
 
 libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-actor" % akkaV,
-  "com.typesafe.akka" %% "akka-http-core-experimental" % $akkaStreamV,
-  "com.typesafe.akka" %% "akka-http-experimental" % $akkaStreamV,
+  "com.typesafe.akka" %% "akka-http-core-experimental" % akkaStreamV,
+  "com.typesafe.akka" %% "akka-http-experimental" % akkaStreamV,
   "com.typesafe.akka" %% "akka-stream-experimental" % akkaStreamV,
   "org.scalaz" %% "scalaz-core" % scalazV,
   "io.argonaut" %% "argonaut" % argonautV,
