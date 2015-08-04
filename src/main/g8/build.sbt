@@ -1,3 +1,4 @@
+import scalariform.formatter.preferences._
 
 name := "$name$"
 
@@ -46,3 +47,10 @@ libraryDependencies ++= Seq(
   "org.typelevel" %% "scalaz-scalatest" % "0.2.3" % Test,
   "com.typesafe.akka" %% "akka-testkit" % akkaV % Test
 )
+
+scalariformSettings
+
+// make the default formatting style be the scala style guide style
+ScalariformKeys.preferences := ScalariformKeys.preferences.value.
+  setPreference(DoubleIndentClassDeclarations).
+  setPreference(PlaceScaladocAsterisksBeneathSecondAsterisk)
