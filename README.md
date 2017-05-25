@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/flyingwalrusllc/reactive-service.g8.png?label=ready&title=Ready)](https://waffle.io/flyingwalrusllc/reactive-service.g8?utm_source=badge)
 # FW Service Skeleton
 
 This is a giter8 template to create a simple akka-http based web
